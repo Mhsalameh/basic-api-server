@@ -7,7 +7,7 @@ dotenv.config();
 const food = require("./food.js");
 const person = require("./person.js");
 
-const POSTGRES_URL = process.env.DATABASE_URL;
+const POSTGRES_URL = process.env.DATABASE_URL || "postgres://salameh:0000@localhost:5432/class03";
 
 console.log(POSTGRES_URL);
 
